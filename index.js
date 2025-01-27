@@ -3,7 +3,8 @@ const app = express();
 const bodyParser = require("body-parser");
 const PORT = 3000;
 const Mongoose =require('mongoose');
-const url="mongodb://127.0.0.1:27017/xlority_Task"
+// const url="mongodb://127.0.0.1:27017/xlority_Task"
+const url = 'mongodb+srv://gokul:sankar@mern.sqrvp1s.mongodb.net/?retryWrites=true&w=majority&appName=mern'
 const router=require("./controller/user_login_controller")
 
 app.use(bodyParser.json());

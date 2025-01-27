@@ -1,7 +1,7 @@
 // routes/userRoutes.js
 const express = require('express');
 const User = require('../models/user_Schema');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const Joi = require('@hapi/joi');
 const nodemailer =require('nodemailer')
 const jwt=require('jsonwebtoken')

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm rebuild bcrypt --build-from-source && your build command"
+    "build": "npm rebuild bcrypt --build-from-source && your build command",
+    "dev": "node index.js"
   },
   "author": "",
   "license": "ISC",

@@ -150,7 +150,7 @@ router.post('/reset-pass', async (req, res) => {
 
         // Save OTP to user document (consider setting an expiry)
         user.resetpasswordToken = otp.toString(); // Store OTP as a string for consistency
-        user.resetpasswordExpires = Date.now() + 1 * 60 * 1000; // 1 minutes from now
+        user.resetpasswordExpires = Date.now() + 5 * 60 * 1000; // 1 minutes from now
 
         await user.save();
         console.log(user)
